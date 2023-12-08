@@ -19,3 +19,13 @@ function permutationSort(arr, queue = [], len = arr.length, iters = [0]) {
         queue.pop()
     }
 }
+
+// used to test if given array is sorted in ascending order
+function testSort(arr) {
+    flag = true
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i-1] > arr[i])
+            flag = false
+    }
+    return flag
+}
